@@ -1,0 +1,15 @@
+using System;
+
+namespace AngryBirds;
+
+public static class AngryBirdsTask
+{
+    public static double FindSightAngle(double v, double distance)
+    {
+        const double g = 9.8;
+              
+        var value = g * distance / (v * v);
+
+        return Math.Asin(value) / 2;
+    }
+}
